@@ -1,4 +1,6 @@
-# Marco Jørgensen - Archaeology Student Website
+
+# Create a comprehensive README file with setup instructions
+readme_content = '''# Marco Jørgensen - Archaeology Student Website
 
 A professional, responsive website for archaeology student Marco Birkedahl Jørgensen, showcasing research interests, projects, and contact information.
 
@@ -139,4 +141,12 @@ Free to use and modify for personal use.
 ---
 
 **Last Updated**: October 2025  
-**Created for**: Marco Birkedahl Jørgensen
+**Created for**: Marco Birkedahl Jørgensen'''
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(readme_content)
+
+print("✓ README.md created")
+print("\n" + "="*50)
+print("All website files created successfully!")
+print("="*50)
