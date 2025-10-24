@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marcoj03rgensen.github.io/sitemap.xml
