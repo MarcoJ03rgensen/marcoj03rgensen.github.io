@@ -17,6 +17,9 @@
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="NO9MQJs6hP2Pf5ZfB27auNFYr_hj23PeRAi3SfSr3rc" />
     <link rel="canonical" href="https://marcoj03rgensen.github.io/">
+    <link rel="alternate" hreflang="en" href="https://marcoj03rgensen.github.io/">
+    <link rel="alternate" hreflang="da" href="https://marcoj03rgensen.github.io/">
+    <link rel="alternate" hreflang="x-default" href="https://marcoj03rgensen.github.io/">
     
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -24,11 +27,29 @@
     <meta property="og:title" content="Marco Jørgensen - Archaeology Student">
     <meta property="og:description" content="Archaeology student specializing in landscape phenomenology, GIS analysis, and spatial archaeology.">
     <meta property="og:site_name" content="Marco Jørgensen Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="da_DK">
+    <meta property="profile:first_name" content="Marco">
+    <meta property="profile:last_name" content="Jørgensen">
+    <meta property="profile:username" content="MarcoJ03rgensen">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Marco Jørgensen - Archaeology Student">
     <meta name="twitter:description" content="Archaeology student specializing in landscape phenomenology, GIS analysis, and spatial archaeology.">
+    <meta name="twitter:creator" content="@marcojorgensen">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="coverage" content="Worldwide">
+    <meta name="target" content="all">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Marco Jørgensen">
     
     <link rel="stylesheet" href="styles.css">
     
@@ -203,7 +224,47 @@
         <p>Marco Jørgensen archaeology student Denmark archaeologist landscape phenomenology GIS spatial archaeology</p>
         <p>Marco B. Jørgensen archaeological research Denmark computational archaeology QGIS</p>
         <p>Marco Birkedahl Joergensen Marco Joergensen Marco Jorgensen archaeology student</p>
+        <address>Marco Jørgensen, Denmark</address>
+        <span itemprop="name">Marco Birkedahl Jørgensen</span>
+        <span itemprop="alternateName">Marco Jørgensen</span>
+        <span itemprop="jobTitle">Archaeology Student</span>
+        <span itemprop="affiliation">Archaeological Research</span>
+        <span itemprop="alumniOf">University</span>
+        <span itemprop="nationality">Danish</span>
+        <span itemprop="knowsAbout">Archaeology</span>
+        <span itemprop="knowsAbout">Landscape Phenomenology</span>
+        <span itemprop="knowsAbout">GIS Analysis</span>
     </div>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://marcoj03rgensen.github.io/"
+      }]
+    }
+    </script>
+
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Marco Jørgensen Portfolio",
+      "alternateName": ["Marco Birkedahl Jørgensen", "Marco Jorgensen", "Marco B Jørgensen"],
+      "url": "https://marcoj03rgensen.github.io/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://marcoj03rgensen.github.io/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
 
     <script src="script.js"></script>
 </body>
