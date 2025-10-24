@@ -358,9 +358,12 @@ nav {
 /* LinkedIn contact card in contact section */
 .contact-social {
     margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 .linkedin-card {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 0.75rem;
     padding: 0.5rem 0.75rem;
@@ -369,6 +372,8 @@ nav {
     border-radius: 8px;
     text-decoration: none;
     color: inherit;
+    width: 100%;
+    max-width: 380px;
 }
 .linkedin-card:hover {
     background: #eef6ff;
