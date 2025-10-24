@@ -339,6 +339,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    align-items: start;
 }
 
 .contact-info h3 {
@@ -411,6 +412,8 @@ nav {
     font-family: inherit;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    min-height: 120px;
+    resize: vertical;
 }
 
 .contact-form input:focus,
