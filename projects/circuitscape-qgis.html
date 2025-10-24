@@ -19,7 +19,7 @@
   <main class="container">
     <section class="project-hero">
       <div class="project-hero-inner">
-        <img src="/CircuitscapeQGIS.png" alt="CircuitscapeQGIS icon" class="project-hero-icon"/>
+        <img src="/assets/images/projects/CircuitscapeQGIS.png" alt="CircuitscapeQGIS icon" class="project-hero-icon"/>
         <h1>CircuitscapeQGIS <span class="byline">(QGIS plugin) — WIP</span></h1>
         <p class="lead">Run Circuitscape connectivity analysis directly from QGIS. This plugin helps run circuit-theory based connectivity models using resistance rasters and focal points, with background task support and automatic CRS handling.</p>
         <p><strong>Status:</strong> WIP — active development. See repository link below.</p>
@@ -67,6 +67,42 @@
 
       <hr />
       <p class="meta">Plugin metadata: version 1.0.0 — Author: Marco Birkedahl Jørgensen.</p>
+    </section>
+
+    <!-- Structured data: SoftwareApplication + SoftwareSourceCode -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "CircuitscapeQGIS",
+      "description": "A QGIS plugin to run Circuitscape connectivity analysis directly from QGIS.",
+      "applicationCategory": "DeveloperTool",
+      "operatingSystem": "WINDOWS, LINUX, MAC",
+      "featureList": "Run Circuitscape from QGIS; background tasks; CRS transformation; multiple solvers",
+      "author": {
+        "@type": "Person",
+        "name": "Marco Birkedahl Jørgensen"
+      },
+      "softwareVersion": "1.0.0",
+      "url": "https://marcoj03rgensen.github.io/projects/circuitscape-qgis.html",
+      "codeRepository": "https://github.com/yourusername/circuitscape-qgis"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "CircuitscapeQGIS",
+      "codeRepository": "https://github.com/yourusername/circuitscape-qgis",
+      "programmingLanguage": "Python",
+      "license": "MIT",
+      "author": {
+        "@type": "Person",
+        "name": "Marco Birkedahl Jørgensen"
+      }
+    }
+    </script>
     </section>
 
     <footer>
