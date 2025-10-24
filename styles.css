@@ -64,6 +64,11 @@ nav {
     gap: 0.75rem;
 }
 
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .logo-image {
     height: 50px;
     width: auto;
@@ -78,11 +83,13 @@ nav {
     color: var(--white);
     font-size: 1.8rem;
     margin-bottom: 0.2rem;
+    line-height: 1;
 }
 
 .subtitle {
     color: var(--secondary-color);
     font-size: 0.9rem;
+    line-height: 1;
 }
 
 .nav-links {
