@@ -561,7 +561,7 @@ footer {
     margin-bottom: 1rem;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 65%; /* focus lower center where tents appear */
+    background-position: center 72%; /* focus lower center where tents appear (tweakable) */
 }
 .excavation-hero::before {
     content: "";
@@ -594,6 +594,17 @@ footer {
     padding: 0.3rem 0.6rem;
     font-weight: 700;
     backdrop-filter: blur(4px);
+}
+
+/* Completed badge styles (green) */
+.project-badge.completed {
+    background: linear-gradient(90deg, #28a745, #218838); /* green */
+    color: #fff;
+}
+.project-status.completed {
+    background: rgba(40,167,69,0.12);
+    color: #155724; /* dark green text */
+    border: 1px solid rgba(40,167,69,0.18);
 }
 
 @media (max-width: 768px) {
