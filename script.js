@@ -90,21 +90,35 @@ window.addEventListener('scroll', () => {
 // ===================================
 const contactForm = document.querySelector('.contact-form');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Get form data
-    const formData = new FormData(contactForm);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const message = formData.get('message');
+    const submitButton = contactForm.querySelector('.submit-button');
+    const originalText = submitButton.textContent;
+    submitButton.textContent = 'Sending...';
+    submitButton.disabled = true;
 
-    // Here you would typically send the data to a server
-    // For now, we'll just show a success message
-    alert(`Thank you for your message, ${name}! I'll get back to you soon at ${email}.`);
+    try {
+        const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
 
-    // Reset form
-    contactForm.reset();
+        if (response.ok) {
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            contactForm.reset();
+        } else {
+            alert('Oops! There was a problem sending your message. Please try again.');
+        }
+    } catch (error) {
+        alert('Oops! There was a problem sending your message. Please try again.');
+    } finally {
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+    }
 });
 
 // ===================================
