@@ -374,13 +374,14 @@ nav {
     background: #eef6ff;
 }
 .social-icon {
-    width: 42px;
-    height: 42px;
-    flex: 0 0 42px;
-    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border-radius: 50%;
     background: #fff;
-    padding: 6px;
+    padding: 2px;
     box-shadow: 0 2px 6px rgba(10,102,194,0.08);
+    object-fit: cover;
 }
 .social-meta strong {
     display: block;
