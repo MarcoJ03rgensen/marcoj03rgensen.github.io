@@ -518,6 +518,27 @@ footer {
         display: flex;
     }
 
+    nav {
+        padding: 1rem 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo-image {
+        height: 45px;
+    }
+
+    .subtitle {
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        margin-top: 70px;
+        min-height: 70vh;
+    }
+
     .hero-content h2 {
         font-size: 2rem;
     }
@@ -526,19 +547,77 @@ footer {
         font-size: 1.1rem;
     }
 
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .cta-button {
+        padding: 0.9rem 2rem;
+        font-size: 0.95rem;
+    }
+
     .about-content,
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about,
+    .research,
+    .projects,
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .container {
+        padding: 0 15px;
     }
 
     h2 {
         font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .research-card,
+    .project-item {
+        padding: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .linkedin-card {
+        max-width: 100%;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-item {
+        height: 250px;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
+    .hero {
+        margin-top: 65px;
+    }
+
     .hero-content h2 {
         font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
     }
 
     .logo h1 {
@@ -549,8 +628,66 @@ footer {
         height: 40px;
     }
 
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
     .research-grid {
         grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .research-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-text p,
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .project-item {
+        height: 220px;
+    }
+
+    nav {
+        padding: 0.8rem 0.8rem;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .cta-button:active,
+    .submit-button:active,
+    .nav-links a:active {
+        transform: scale(0.98);
+    }
+
+    .project-item:active {
+        transform: scale(0.99);
+    }
+
+    /* Always show project hover text on touch devices */
+    .project-hover {
+        opacity: 0.9;
+    }
+
+    /* Make touch targets larger */
+    .nav-links a {
+        padding: 0.8rem 0;
+        display: block;
+    }
+
+    .hamburger {
+        padding: 0.5rem;
     }
 }
 
