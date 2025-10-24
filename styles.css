@@ -560,8 +560,9 @@ footer {
     overflow: hidden;
     margin-bottom: 1rem;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 72%; /* focus lower center where tents appear (tweakable) */
+    /* slightly zoom in and position lower to focus tents */
+    background-size: 150%;
+    background-position: center 86%;
 }
 .excavation-hero::before {
     content: "";
