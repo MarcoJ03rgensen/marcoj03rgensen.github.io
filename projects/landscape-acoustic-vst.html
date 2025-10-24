@@ -68,44 +68,9 @@ This README describes **LandscapeAcousticVST**, a real-time terrain-based sound 
 The plugin offers **real-time convolution** for terrain-derived impulse responses and **ISO 9613-2 compliance** for scientifically accurate acoustic propagation modeling. It supports multiple **DEM formats** (GeoTIFF, ESRI ASCII Grid, DTED, SRTM HGT, and ERDAS Imagine) through GDAL integration, with seamless **QGIS integration** via PyQGIS export scripts. The plugin is available as **VST3, AU, and standalone applications** across Windows, macOS, and Linux, and includes an **interactive GUI** with visual terrain mapping and point-and-click source/receiver selection.
 
 ### Technical Requirements[1]
-
+                <h3>Description</h3>
 To build the plugin, you need the **JUCE Framework** (7.0+), **GDAL Library** (3.0+), **CMake** (3.15+), and a C++17-compatible compiler. The documentation provides platform-specific installation instructions for Windows (vcpkg), macOS (Homebrew), and Linux (Ubuntu/Debian).
-
-### How to Use[1]
-
-Users can load DEM data by dragging and dropping GeoTIFF files or using the "Load DEM File" button. Analysis points are set by left-clicking to place a sound source and right-clicking to set the listener position, with the plugin automatically generating the impulse response. Adjustable parameters include temperature, humidity, ground type (Hard/Porous/Mixed), source and receiver heights, and dry/wet mix. The plugin processes audio in real-time through terrain-based convolution and allows export of impulse responses as WAV files.
-
-### Scientific Approach[1]
-
-The plugin implements the ISO 9613-2 international standard for outdoor sound attenuation, including **geometric spreading loss** (divergence), **temperature and humidity-dependent atmospheric absorption**, **ground effect modeling**, and **Fresnel knife-edge diffraction theory** for terrain obstructions.
-
-### QGIS Integration Workflow[1]
-
-The plugin can be installed as a QGIS plugin or used with manual export scripts. Users open a DEM as a raster layer, create a point layer with source/receiver points, add a 'type' attribute to distinguish sources from receivers, and run the `qgis_export.py` script in QGIS's Python Console. The generated configuration can then be imported into the plugin using the "Import QGIS Config" button, which automatically loads the DEM and sets analysis points.
-
-### Archaeoacoustic Applications[1]
-
-The documentation highlights three key applications for archaeology: **soundscape reconstruction** for modeling historical acoustic environments, **site analysis** for understanding acoustic properties of archaeological locations, and **cultural interpretation** to explore sound-landscape relationships in past societies.
-
-### Performance Specifications[1]
-
-The plugin achieves **less than 5% CPU usage** for typical scenarios, supports impulse response lengths up to 16,384 samples (370ms at 44.1kHz), has been tested with elevation grids up to 10k×10k, and maintains plugin latency plus convolution delay of typically less than 10ms.
-
-### Development and Support[1]
-
-The project is structured with C++ source code in the `Source/` directory, UI assets and sample data in `Resources/`, QGIS integration scripts in `scripts/`, unit and integration tests in `tests/`, and documentation in `docs/`. The plugin is licensed under the MIT License and includes guidelines for contributing that emphasize C++17 standards, unit tests, Doxygen documentation, and validation against ISO 9613-2 reference calculations.
-</code></pre>
-                </div>
-            </section>
-        </div>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Marco Birkedahl Jørgensen. All rights reserved.</p>
-        </div>
-    </footer>
+<pre><code>LandscapeAcousticVST is a real-time terrain-based sound propagation VST plugin designed to
 
     <script src="/script.js"></script>
 
