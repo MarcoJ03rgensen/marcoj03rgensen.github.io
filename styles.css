@@ -587,14 +587,22 @@ footer {
     text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
 .excavation-hero .project-status {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-top: 0.5rem;
-    background: rgba(255,255,255,0.12);
+    /* Use a stronger, opaque overlay for readability */
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     border-radius: 6px;
-    padding: 0.3rem 0.6rem;
+    padding: 0.35rem 0.8rem;
     font-weight: 700;
-    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    backdrop-filter: none; /* remove blur which reduces legibility */
+    border: none;
+    font-size: 0.95rem;
+    max-width: max-content; /* avoid stretching full-width */
 }
 
 /* Completed badge styles (green) */
@@ -603,9 +611,11 @@ footer {
     color: #fff;
 }
 .project-status.completed {
-    background: rgba(40,167,69,0.12);
-    color: #155724; /* dark green text */
-    border: 1px solid rgba(40,167,69,0.18);
+    /* Make the "Completed" pill high-contrast while keeping a green cue */
+    background: linear-gradient(90deg, #218838, #19692c);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 12px rgba(25, 100, 40, 0.35);
 }
 
 @media (max-width: 768px) {
