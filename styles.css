@@ -586,6 +586,25 @@ footer {
     margin: 0;
     text-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
+.excavation-hero .byline {
+    margin: 0.25rem 0 0.45rem 0;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.92);
+    opacity: 0.95;
+}
+
+/* Utility: visually hidden but accessible to screen readers */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
 .excavation-hero .project-status {
     display: inline-flex;
     align-items: center;
