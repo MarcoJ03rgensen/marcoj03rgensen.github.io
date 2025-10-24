@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandscapeAcousticVST — Project | Marco Birkedahl Jørgensen</title>
+    <meta name="description" content="LandscapeAcousticVST — terrain-based, real-time sound propagation VST plugin (WIP) by Marco Birkedahl Jørgensen.">
+    <meta name="author" content="Marco Birkedahl Jørgensen">
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://marcoj03rgensen.github.io/projects/landscape-acoustic-vst.html">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Marco Jørgensen</h1>
+                <p class="subtitle">Archaeology Student</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#research">Research</a></li>
+                <li><a href="/index.html#projects">Projects</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top:120px; padding-bottom:60px;">
+        <a href="/index.html#projects">← Back to projects</a>
+
+        <div class="project-detail" style="margin-top:1.5rem;">
+            <div style="display:grid; grid-template-columns: 220px 1fr; gap:2rem; align-items:start;">
+                <div>
+                    <!-- Prefer local logo: place file at /assets/images/projects/soundscape-vst.png -->
+                    <img src="/assets/images/projects/soundscape-vst.png" alt="LandscapeAcousticVST icon" style="width:100%; border-radius:8px; box-shadow: var(--shadow);" onerror="this.onerror=null;this.src='/icon.png'">
+                    <p style="margin-top:0.6rem; font-weight:700; text-align:center">LandscapeAcousticVST</p>
+                </div>
+                <div>
+                    <h2>LandscapeAcousticVST</h2>
+                    <p class="byline">By Marco Birkedahl Jørgensen</p>
+                    <div class="project-status">Status: Work in progress</div>
+                    <p>A terrain-based, real-time sound propagation VST plugin designed for outdoor acoustic simulation using DEMs and ISO 9613-2 methods.</p>
+
+                    <h3>Overview</h3>
+                    <p>This project implements real-time terrain-derived convolution and scientifically-grounded propagation modeling to simulate outdoor soundscapes for research and creative use.</p>
+
+                    <h3>Technical & Development</h3>
+                    <p>Author: Marco Birkedahl Jørgensen</p>
+                    <p>Repository & issues: <a href="https://github.com/yourusername/landscape-acoustic-vst" target="_blank" rel="noopener">https://github.com/yourusername/landscape-acoustic-vst</a></p>
+                </div>
+            </div>
+
+            <section style="margin-top:2rem;">
+                <h3>Documentation</h3>
+                <div class="project-readme" style="background:#f9f9f9;padding:1rem;border-radius:6px;overflow:auto;">
+<pre><code>## LandscapeAcousticVST Plugin Documentation[1]
+
+This README describes **LandscapeAcousticVST**, a real-time terrain-based sound propagation VST plugin designed to simulate outdoor acoustic environments using Digital Elevation Models (DEMs) and ISO 9613-2 acoustic propagation calculations.
+
+### Core Features[1]
+
+The plugin offers **real-time convolution** for terrain-derived impulse responses and **ISO 9613-2 compliance** for scientifically accurate acoustic propagation modeling. It supports multiple **DEM formats** (GeoTIFF, ESRI ASCII Grid, DTED, SRTM HGT, and ERDAS Imagine) through GDAL integration, with seamless **QGIS integration** via PyQGIS export scripts. The plugin is available as **VST3, AU, and standalone applications** across Windows, macOS, and Linux, and includes an **interactive GUI** with visual terrain mapping and point-and-click source/receiver selection.
+
+### Technical Requirements[1]
+
+To build the plugin, you need the **JUCE Framework** (7.0+), **GDAL Library** (3.0+), **CMake** (3.15+), and a C++17-compatible compiler. The documentation provides platform-specific installation instructions for Windows (vcpkg), macOS (Homebrew), and Linux (Ubuntu/Debian).
+
+### How to Use[1]
+
+Users can load DEM data by dragging and dropping GeoTIFF files or using the "Load DEM File" button. Analysis points are set by left-clicking to place a sound source and right-clicking to set the listener position, with the plugin automatically generating the impulse response. Adjustable parameters include temperature, humidity, ground type (Hard/Porous/Mixed), source and receiver heights, and dry/wet mix. The plugin processes audio in real-time through terrain-based convolution and allows export of impulse responses as WAV files.
+
+### Scientific Approach[1]
+
+The plugin implements the ISO 9613-2 international standard for outdoor sound attenuation, including **geometric spreading loss** (divergence), **temperature and humidity-dependent atmospheric absorption**, **ground effect modeling**, and **Fresnel knife-edge diffraction theory** for terrain obstructions.
+
+### QGIS Integration Workflow[1]
+
+The plugin can be installed as a QGIS plugin or used with manual export scripts. Users open a DEM as a raster layer, create a point layer with source/receiver points, add a 'type' attribute to distinguish sources from receivers, and run the `qgis_export.py` script in QGIS's Python Console. The generated configuration can then be imported into the plugin using the "Import QGIS Config" button, which automatically loads the DEM and sets analysis points.
+
+### Archaeoacoustic Applications[1]
+
+The documentation highlights three key applications for archaeology: **soundscape reconstruction** for modeling historical acoustic environments, **site analysis** for understanding acoustic properties of archaeological locations, and **cultural interpretation** to explore sound-landscape relationships in past societies.
+
+### Performance Specifications[1]
+
+The plugin achieves **less than 5% CPU usage** for typical scenarios, supports impulse response lengths up to 16,384 samples (370ms at 44.1kHz), has been tested with elevation grids up to 10k×10k, and maintains plugin latency plus convolution delay of typically less than 10ms.
+
+### Development and Support[1]
+
+The project is structured with C++ source code in the `Source/` directory, UI assets and sample data in `Resources/`, QGIS integration scripts in `scripts/`, unit and integration tests in `tests/`, and documentation in `docs/`. The plugin is licensed under the MIT License and includes guidelines for contributing that emphasize C++17 standards, unit tests, Doxygen documentation, and validation against ISO 9613-2 reference calculations.
+</code></pre>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Marco Birkedahl Jørgensen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+
+    <!-- Structured data for indexing -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "LandscapeAcousticVST",
+      "description": "Real-time terrain-based sound propagation VST plugin using DEMs and ISO 9613-2 methods.",
+      "applicationCategory": "AudioSoftware",
+      "operatingSystem": "WINDOWS, LINUX, MAC",
+      "author": { "@type": "Person", "name": "Marco Birkedahl Jørgensen" },
+      "softwareVersion": "0.1.0",
+      "url": "https://marcoj03rgensen.github.io/projects/landscape-acoustic-vst.html",
+      "codeRepository": "https://github.com/yourusername/landscape-acoustic-vst"
+    }
+    </script>
+
+</body>
+</html>
