@@ -402,7 +402,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 4.5rem;
+    margin-top: 2.75rem;
 }
 
 .contact-form input,
