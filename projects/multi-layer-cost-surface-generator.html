@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Layer Cost Surface Generator — Project</title>
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Marco Jørgensen</h1>
+                <p class="subtitle">Archaeology Student</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#research">Research</a></li>
+                <li><a href="/index.html#projects">Projects</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="padding-top:120px; padding-bottom:60px;">
+        <a href="/index.html#projects">← Back to projects</a>
+
+        <div class="project-detail" style="margin-top:1.5rem;">
+            <div style="display:grid; grid-template-columns: 220px 1fr; gap:2rem; align-items:start;">
+                <div>
+                    <img src="/pottery.png" alt="Plugin icon" style="width:100%; border-radius:8px; box-shadow: var(--shadow);">
+                    <p style="margin-top:0.6rem; font-weight:700; text-align:center">Multi-Layer Cost Surface Generator</p>
+                </div>
+                <div>
+                    <h2>Multi-Layer Cost Surface Generator</h2>
+                    <p>A QGIS plugin for generating cost surfaces combining DEM slope analysis and land cover resistance for circuit theory and connectivity analysis.</p>
+
+                    <h3>Goals</h3>
+                    <ul>
+                        <li>Provide robust, configurable cost surface generation for ecological and archaeological connectivity studies.</li>
+                        <li>Allow users to combine DEM-derived slope resistance and categorical land-cover resistance in weighted layers.</li>
+                        <li>Produce outputs compatible with Circuitscape, Omniscape and other connectivity tools.</li>
+                        <li>Offer reproducible settings and calibration options for slope→resistance conversions.</li>
+                    </ul>
+
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>DEM Slope Analysis with multiple slope→resistance methods (exponential, linear, biometric, anisotropic, threshold).</li>
+                        <li>Land cover resistance mapping with automatic category detection and CSV import/export.</li>
+                        <li>Temporary file control for processing large rasters.</li>
+                        <li>Export to ASCII raster (.asc) for downstream circuit-theory tools.</li>
+                        <li>Progress reporting and user-friendly UI in QGIS.</li>
+                    </ul>
+
+                    <h3>Usage Notes</h3>
+                    <p>The plugin expects a DEM and a categorical land-cover raster loaded in QGIS. Use the "Analyze Land Cover Values" button to populate categories, set resistance values (0-1), choose slope weight and method, and generate the combined cost surface.</p>
+
+                    <h3>Technical & Development</h3>
+                    <p>Author: Marco Birkedahl Jørgensen — <em>marcobirkedahl@gmail.com</em> (not displayed on the main site)</p>
+                    <p>Repository and issue tracker: <a href="https://github.com/MarcoJ03rgensen/Multi-layer-cost-surface-generator" target="_blank">GitHub</a></p>
+
+                    <h3>Download / Install</h3>
+                    <p>Manual installation instructions and a ZIP install option are available in the plugin README on the GitHub repository. Outputs are ASCII rasters compatible with most circuit analysis tools.</p>
+                </div>
+            </div>
+
+            <section style="margin-top:2rem;">
+                <h3>Changelog (summary)</h3>
+                <p>Version 1.0.4 — Added multiple slope→resistance methods, biometric calibration UI, CSV import/export, and various UI and robustness improvements.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Marco Birkedahl Jørgensen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
