@@ -412,7 +412,7 @@ nav {
     font-family: inherit;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-    min-height: 120px;
+    min-height: 180px;
     resize: vertical;
 }
 
