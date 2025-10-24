@@ -1,75 +1,102 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>CircuitscapeQGIS — QGIS plugin (WIP) | Marco Jørgensen</title>
-  <meta name="description" content="CircuitscapeQGIS — a QGIS plugin to run Circuitscape connectivity analysis directly from QGIS. WIP by Marco Birkedahl Jørgensen.">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="canonical" href="https://marcoj03rgensen.github.io/projects/circuitscape-qgis.html">
-  <meta name="author" content="Marco Birkedahl Jørgensen">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircuitscapeQGIS — Project | Marco Birkedahl Jørgensen</title>
+    <meta name="description" content="CircuitscapeQGIS — a QGIS plugin by Marco Birkedahl Jørgensen for running Circuitscape connectivity analyses from inside QGIS.">
+    <meta name="author" content="Marco Birkedahl Jørgensen">
+    <link rel="stylesheet" href="/styles.css">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://marcoj03rgensen.github.io/projects/circuitscape-qgis.html">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/">Home</a> • <a href="/projects/">Projects</a>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Marco Jørgensen</h1>
+                <p class="subtitle">Archaeology Student</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#research">Research</a></li>
+                <li><a href="/index.html#projects">Projects</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-  <main class="container">
-    <section class="project-hero">
-      <div class="project-hero-inner">
-        <img src="/assets/images/projects/CircuitscapeQGIS.png" alt="CircuitscapeQGIS icon" class="project-hero-icon"/>
-        <h1>CircuitscapeQGIS <span class="byline">(QGIS plugin) — WIP</span></h1>
-        <p class="lead">Run Circuitscape connectivity analysis directly from QGIS. This plugin helps run circuit-theory based connectivity models using resistance rasters and focal points, with background task support and automatic CRS handling.</p>
-        <p><strong>Status:</strong> WIP — active development. See repository link below.</p>
-      </div>
-    </section>
+    <main class="container" style="padding-top:120px; padding-bottom:60px;">
+        <a href="/index.html#projects">← Back to projects</a>
 
-    <section>
-      <h2>Overview</h2>
-      <p>CircuitscapeQGIS is a QGIS plugin that wraps Circuitscape functionality and provides a user-friendly interface to run connectivity analyses from within QGIS. The plugin supports resistance rasters, focal points, multiple solver options, and background processing via the QGIS task manager.</p>
+        <div class="project-detail" style="margin-top:1.5rem;">
+            <div style="display:grid; grid-template-columns: 220px 1fr; gap:2rem; align-items:start;">
+                <div>
+                    <img src="/assets/images/projects/CircuitscapeQGIS.png" alt="CircuitscapeQGIS icon" style="width:100%; border-radius:8px; box-shadow: var(--shadow);">
+                    <p style="margin-top:0.6rem; font-weight:700; text-align:center">CircuitscapeQGIS</p>
+                </div>
+                <div>
+                    <h2>CircuitscapeQGIS</h2>
+                    <p class="byline">By Marco Birkedahl Jørgensen</p>
+                    <div class="project-status">Status: Work in progress</div>
+                    <p>CircuitscapeQGIS is a QGIS plugin that integrates Circuitscape functionality for landscape connectivity analysis directly into QGIS. It supports resistance rasters, focal points, background task processing and multiple solver options.</p>
 
-      <h3>Features</h3>
-      <ul>
-        <li>Run Circuitscape directly from QGIS (resistance or conductance modes)</li>
-        <li>Background processing with the QGIS Task Manager</li>
-        <li>Automatic CRS transformation for focal points</li>
-        <li>Support for multiple solver options (fast AMG, precise CHOLMOD)</li>
-        <li>Clean, user-friendly interface</li>
-      </ul>
+                    <h3>Goals</h3>
+                    <ul>
+                        <li>Provide a simple, reproducible interface to run Circuitscape from within QGIS.</li>
+                        <li>Support common workflows: resistance rasters, focal points, and export of current maps.</li>
+                        <li>Offer robust background processing and automatic CRS handling for focal layers.</li>
+                    </ul>
 
-      <h3>Installation</h3>
-      <p>Requirements: QGIS 3.16+ and Circuitscape installed (Julia Circuitscape or Python Circuitscape).</p>
-      <h4>Option 1 — Julia + Circuitscape.jl (recommended)</h4>
-      <pre><code>julia -e 'using Pkg; Pkg.add("Circuitscape")'</code></pre>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Run Circuitscape in resistance or conductance mode.</li>
+                        <li>Background processing with the QGIS Task Manager.</li>
+                        <li>Automatic CRS transformation for focal points.</li>
+                        <li>Multiple solver options (fast AMG, precise CHOLMOD).</li>
+                        <li>Convenient export options (ASCII raster for downstream tools).</li>
+                    </ul>
 
-      <h4>Option 2 — Python Circuitscape</h4>
-      <pre><code>pip install circuitscape</code></pre>
+                    <h3>Usage Notes</h3>
+                    <p>Load a resistance raster and (optionally) focal points in QGIS, open the CircuitscapeQGIS plugin, configure inputs and solver, and run. Monitor progress in the QGIS Task Manager — outputs will be added to the map when complete.</p>
 
-      <h3>Usage</h3>
-      <ol>
-        <li>Load a resistance raster into QGIS (higher values = harder to move through).</li>
-        <li>Optionally load focal points.</li>
-        <li>Open the CircuitscapeQGIS plugin, configure inputs, choose a solver and output location.</li>
-        <li>Run and monitor progress in the QGIS Task Manager. Output is added to the map when ready.</li>
-      </ol>
+                    <h3>Technical & Development</h3>
+                    <p>Author: Marco Birkedahl Jørgensen</p>
+                    <p>Repository & issues: <a href="https://github.com/yourusername/circuitscape-qgis" target="_blank" rel="noopener">https://github.com/yourusername/circuitscape-qgis</a></p>
 
-      <h3>Troubleshooting & Tips</h3>
-      <ul>
-        <li>Ensure Circuitscape or Julia is in your PATH.</li>
-        <li>Use a projected CRS (not lat/long) for accurate distance-based analysis.</li>
-        <li>Reduce raster resolution for large analyses to save time.</li>
-      </ul>
+                    <h3>Install</h3>
+                    <p>Requirements: QGIS 3.16+ and Circuitscape (Julia or Python implementation).</p>
+                    <p><strong>Julia (recommended)</strong></p>
+                    <pre><code>julia -e 'using Pkg; Pkg.add("Circuitscape")'</code></pre>
+                    <p><strong>Python (alternative)</strong></p>
+                    <pre><code>pip install circuitscape</code></pre>
 
-      <h3>Repository & Issues</h3>
-      <p>Repository: <a href="https://github.com/yourusername/circuitscape-qgis" target="_blank" rel="noopener">https://github.com/yourusername/circuitscape-qgis</a> (placeholder — update to real repo when available).</p>
+                </div>
+            </div>
 
-      <hr />
-      <p class="meta">Plugin metadata: version 1.0.0 — Author: Marco Birkedahl Jørgensen.</p>
-    </section>
+            <section style="margin-top:2rem;">
+                <h3>Changelog (summary)</h3>
+                <p>Version 1.0.0 — Initial WIP release with UI, task manager integration, and basic solver options.</p>
+            </section>
+        </div>
 
-    <!-- Structured data: SoftwareApplication + SoftwareSourceCode -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Marco Birkedahl Jørgensen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+
+    <!-- Structured data: SoftwareApplication + SoftwareSourceCode (kept for indexing) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -78,6 +105,28 @@
       "description": "A QGIS plugin to run Circuitscape connectivity analysis directly from QGIS.",
       "applicationCategory": "DeveloperTool",
       "operatingSystem": "WINDOWS, LINUX, MAC",
+      "featureList": "Run Circuitscape from QGIS; background tasks; CRS transformation; multiple solvers",
+      "author": { "@type": "Person", "name": "Marco Birkedahl Jørgensen" },
+      "softwareVersion": "1.0.0",
+      "url": "https://marcoj03rgensen.github.io/projects/circuitscape-qgis.html",
+      "codeRepository": "https://github.com/yourusername/circuitscape-qgis"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareSourceCode",
+      "name": "CircuitscapeQGIS",
+      "codeRepository": "https://github.com/yourusername/circuitscape-qgis",
+      "programmingLanguage": "Python",
+      "license": "MIT",
+      "author": { "@type": "Person", "name": "Marco Birkedahl Jørgensen" }
+    }
+    </script>
+
+</body>
+</html>
       "featureList": "Run Circuitscape from QGIS; background tasks; CRS transformation; multiple solvers",
       "author": {
         "@type": "Person",
