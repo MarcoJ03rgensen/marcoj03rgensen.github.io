@@ -278,6 +278,31 @@ nav {
     transform: translateY(-2px);
 }
 
+/* Project status badge */
+.project-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(255,165,0,0.95); /* orange */
+    color: #111;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.project-status {
+    display: inline-block;
+    background: linear-gradient(90deg, #fff3cd, #ffeeba);
+    color: #856404;
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
 .project-overlay {
     position: absolute;
     bottom: 0;
