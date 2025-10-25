@@ -730,6 +730,35 @@ footer {
     gap: 1rem;
     margin-top: 0.5rem;
 }
+
+/* Games overview specific styles */
+.games-list .project-gallery {
+    display: block; /* single-column layout for games list */
+}
+.games-list .project-item {
+    max-width: 880px;
+    margin: 0.75rem auto; /* center the card */
+    height: 120px; /* compact height for list preview */
+    border-radius: 12px;
+    overflow: hidden;
+}
+.games-list .project-image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.25rem;
+}
+.games-list .project-name {
+    background: transparent; /* keep name visible but not in a heavy band */
+    color: var(--white);
+    font-size: 1.25rem;
+    padding: 0;
+}
+.games-list .project-description {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.95rem;
+    margin-left: 1.25rem;
+}
 .gallery-item {
     background: var(--white);
     border-radius: 8px;
