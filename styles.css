@@ -22,6 +22,10 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -45,6 +49,8 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     box-shadow: var(--shadow);
 }
@@ -56,6 +62,7 @@ nav {
     padding: 1rem 2rem;
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .logo {
@@ -63,12 +70,16 @@ nav {
     align-items: center;
     gap: 1rem; /* slightly larger gap so subtitle isn't crowded */
     text-decoration: none;
+    z-index: 1001;
+    position: relative;
+    flex-shrink: 0;
 }
 
 .logo-text {
     display: flex;
     flex-direction: column;
     gap: 0.15rem; /* small breathing room between name and subtitle */
+    z-index: 1001;
 }
 
 .logo-image {
@@ -78,6 +89,8 @@ nav {
     display: block;
     border-radius: 50%;
     object-fit: cover;
+    z-index: 1001;
+    flex-shrink: 0;
 }
 
 .logo-image:hover {
@@ -997,8 +1010,128 @@ article .lead {
     box-shadow: 0 4px 12px rgba(25, 100, 40, 0.35);
 }
 
+.project-readme {
+    background:#f9f9f9;
+    padding:1rem;
+    border-radius:6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.project-readme pre {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.project-readme code {
+    font-family: 'Courier New', monospace;
+    word-break: break-word;
+}
+
 @media (max-width: 768px) {
     .excavation-hero { height: 220px; }
     .excavation-hero .hero-title { font-size: 1.25rem; }
+
+    /* Prevent horizontal overflow on mobile */
+    table {
+        width: 100%;
+        font-size: 0.85rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    table td, table th {
+        padding: 0.5rem 0.25rem;
+    }
+
+    /* Long links should wrap */
+    a {
+        word-break: break-word;
+    }
+
+    /* Improve spacing for touch on mobile list items */
+    ul li, ol li {
+        margin-bottom: 0.75rem;
+        padding-right: 0.5rem;
+    }
+
+    .linkedin-card {
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Prevent text from becoming too cramped */
+    main {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Extra padding to prevent edge-flush on tiny screens */
+    .container {
+        padding: 0 12px;
+    }
+
+    /* Improve readability of links on very small screens */
+    a {
+        word-break: break-word;
+    }
+
+    /* Ensure code blocks scroll if needed */
+    pre, code {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+    }
+
+    /* Tighter margins for excavation sections on phones */
+    article section {
+        margin-bottom: 0.75rem;
+    }
+
+    /* Badge and status styling for tiny screens */
+    .project-badge {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.4rem;
+    }
+
+    .project-status {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    /* Make contact form inputs easier to tap */
+    .contact-form input,
+    .contact-form textarea {
+        min-height: 44px;
+        font-size: 16px;
+        padding: 0.75rem;
+    }
+
+    .submit-button {
+        min-height: 44px;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .cta-button {
+        min-height: 44px;
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Ensure images don't overflow tiny screens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
