@@ -169,6 +169,14 @@ nav {
     padding: 2rem;
 }
 
+/* Stack hero content vertically and center items (keeps CTAs beneath each other) */
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* spacing between heading, paragraph and buttons */
+}
+
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
