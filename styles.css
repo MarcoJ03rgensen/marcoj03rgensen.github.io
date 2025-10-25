@@ -326,36 +326,7 @@ nav {
     box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
-/* Move badge to top-right on project cards so it doesn't overlap the logo */
-.project-item .project-badge {
-    left: auto;
-    right: 12px;
-}
-
-/* Small circular project logo overlay */
-.project-card-logo {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid rgba(255,255,255,0.85);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.45);
-    background: #fff;
-    z-index: 6;
-}
-
-@media (max-width: 480px) {
-    .project-card-logo {
-        width: 32px;
-        height: 32px;
-        top: 10px;
-        left: 10px;
-        border-width: 1.5px;
-    }
-}
+/* project badge and logo overlays removed — project cards use background image and name only */
 
 .project-status {
     display: inline-block;
