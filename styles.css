@@ -51,12 +51,14 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 9999;
     box-shadow: var(--shadow);
+    display: block !important;
+    visibility: visible !important;
 }
 
 nav {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
