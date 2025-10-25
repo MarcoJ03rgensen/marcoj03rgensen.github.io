@@ -61,21 +61,23 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem; /* slightly larger gap so subtitle isn't crowded */
     text-decoration: none;
 }
 
 .logo-text {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 0.15rem; /* small breathing room between name and subtitle */
 }
 
 .logo-image {
-    height: 50px;
+    height: 52px; /* a touch larger for readability */
     width: auto;
     transition: transform 0.3s ease;
     display: block;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .logo-image:hover {
@@ -84,17 +86,17 @@ nav {
 
 .logo h1 {
     color: var(--white);
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin: 0;
     padding: 0;
-    line-height: 1.1;
+    line-height: 1.05; /* tighten line height but keep spacing with subtitle */
     border: none;
     text-decoration: none;
 }
 
 .subtitle {
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1;
     margin: 0;
     padding: 0;
@@ -314,7 +316,7 @@ nav {
 .project-badge {
     position: absolute;
     top: 12px;
-    left: 12px;
+    left: 12px; /* default - will be overridden for project items */
     background: rgba(255,165,0,0.95); /* orange */
     color: #111;
     padding: 0.25rem 0.5rem;
@@ -322,6 +324,37 @@ nav {
     font-weight: 700;
     font-size: 0.85rem;
     box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+/* Move badge to top-right on project cards so it doesn't overlap the logo */
+.project-item .project-badge {
+    left: auto;
+    right: 12px;
+}
+
+/* Small circular project logo overlay */
+.project-card-logo {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.85);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.45);
+    background: #fff;
+    z-index: 6;
+}
+
+@media (max-width: 480px) {
+    .project-card-logo {
+        width: 32px;
+        height: 32px;
+        top: 10px;
+        left: 10px;
+        border-width: 1.5px;
+    }
 }
 
 .project-status {
