@@ -177,6 +177,25 @@ nav {
     gap: 1rem; /* spacing between heading, paragraph and buttons */
 }
 
+/* Position the secondary hero CTA lower into the hero area (near the circled region)
+   - large screens: give a bigger offset so it sits toward the lower hero area
+   - mobile: smaller offset so it doesn't push content off-screen */
+.hero-content .hero-secondary {
+    margin-top: 3rem;
+}
+
+@media (min-width: 1200px) {
+    .hero-content .hero-secondary {
+        margin-top: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content .hero-secondary {
+        margin-top: 1rem;
+    }
+}
+
 .hero-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
