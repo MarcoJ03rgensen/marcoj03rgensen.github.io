@@ -774,6 +774,144 @@ footer {
     .two-col { grid-template-columns: 1fr; }
 }
 
+/* ===================================
+   Project & Excavation Detail Layouts
+   =================================== */
+.project-detail-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .project-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Excavation detail wrapper */
+.excavation-detail-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Excavation article/section responsive spacing */
+article section {
+    margin-bottom: 1.5rem;
+}
+
+article section:first-of-type {
+    margin-top: 0;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--dark-color);
+}
+
+article h4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+article ul,
+article ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+article li {
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+article .lead {
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    article h3 {
+        font-size: 1.3rem;
+        margin-top: 1.25rem;
+    }
+
+    article h4 {
+        font-size: 1.1rem;
+        margin-top: 0.8rem;
+    }
+
+    article p,
+    article li {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    article ul,
+    article ol {
+        margin-left: 1.25rem;
+    }
+
+    article section {
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    article h3 {
+        font-size: 1.15rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    article h4 {
+        font-size: 1rem;
+        margin-top: 0.7rem;
+        margin-bottom: 0.4rem;
+    }
+
+    article p,
+    article li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    article ul,
+    article ol {
+        margin-left: 1rem;
+        padding-right: 0.5rem;
+    }
+
+    article section {
+        margin-bottom: 1rem;
+    }
+
+    article .lead {
+        font-size: 1rem;
+    }
+}
+
 /* Excavation hero/cover image */
 .excavation-hero {
     position: relative;
