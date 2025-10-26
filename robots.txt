@@ -1,4 +1,22 @@
+# Marco Jørgensen - Archaeology Student Portfolio
+# Optimized for search engine crawling
+
 User-agent: *
 Allow: /
+Crawl-delay: 0
 
+# Priority pages for Marco Jørgensen
+Allow: /index.html
+Allow: /projects/
+Allow: /games/
+Allow: /excavations/
+
+# Disallow common non-content paths (if any exist in future)
+Disallow: /assets/temp/
+Disallow: /*.log$
+
+# Sitemap
 Sitemap: https://marcoj03rgensen.github.io/sitemap.xml
+
+# Host preference (helps Google understand canonical domain)
+Host: https://marcoj03rgensen.github.io
