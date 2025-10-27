@@ -269,6 +269,91 @@ const translations = {
         exc_elevation_text: '~13.5 m above sea level',
         exc_setting: 'Setting:',
         exc_setting_text: 'Bank of a paleochannel in a dynamic fluvial landscape',
+        
+        // The 2025 Excavation
+        exc_excavation: 'The 2025 Excavation',
+        exc_campaign: 'Campaign details',
+        exc_duration: 'Duration:',
+        exc_duration_text: '5 May – 28 May 2025',
+        exc_team: 'Team:',
+        exc_team_text: 'Led by Prof. Thomas Terberger, Prof. Felix Riede, and PhD student Lasse Lukas Platz Herskind, together with undergraduate students from Aarhus University',
+        exc_areas: 'Excavation areas:',
+        exc_areas_text: 'Two main trenches (Areas A and B, ~10 m² total) and five test pits (0.5 × 0.5 m)',
+        exc_methodology: 'Methodology',
+        exc_method_text: 'Excavation followed single-context stratigraphic removal in 3–5 cm spits, with documentation by total station and GNSS. Wet sieving with UV inspection was used to recover small organic remains (including amber). All spatial data were digitized in QGIS for analysis.',
+        
+        // Key Findings
+        exc_findings: 'Key Findings — 798 Artefacts',
+        exc_material: 'Material distribution',
+        exc_wood: 'Wood:',
+        exc_wood_text: '387 — excellent organic preservation, primarily from Area B',
+        exc_flint: 'Flint:',
+        exc_flint_text: '264 — including burins and production debris',
+        exc_amber: 'Amber:',
+        exc_amber_text: '92 — indicates amber-working activities',
+        exc_plant: 'Plant remains:',
+        exc_plant_text: '33 — Betula, Salix, Populus charcoal identified',
+        exc_bone: 'Bone:',
+        exc_bone_text: '12 — mostly burnt fragments',
+        exc_charcoal: 'Charcoal:',
+        exc_charcoal_text: '10 — evidence of fire use',
+        exc_stratigraphy: 'Stratigraphy',
+        exc_strat_intro: 'Four geological horizons were documented:',
+        exc_gh1: 'Topsoil (plough layer, ~30 cm)',
+        exc_gh2: 'Light grey fluvial silt (~7–14 cm), partially sterile',
+        exc_gh3: 'Allerød cultural layer with dark grey-brown sediment containing most artefacts',
+        exc_gh4: 'Light grey sand with orange/yellow mottling (sterile)',
+        exc_false_layer: 'A thin "false Allerød layer" (interpreted as a Younger Dryas flooding line) marks a transition within GH2.',
+        
+        // Lithic Technology
+        exc_lithic: 'Lithic Technology: Evidence of Specialized Tool Production',
+        exc_burins: 'Burins',
+        exc_burins_text: 'Five burins were recovered — notable for the Late Palaeolithic. Three have double working edges and one shows multiple resharpening episodes with associated burin spalls. Burins are interpreted as engraving tools and are consistent with specialised working activities.',
+        exc_flakes_head: 'Specialized flakes',
+        exc_flakes_text: 'Two flakes with equilateral triangular cross-sections and retouched tips were found; these appear adapted for narrow scraping or engraving and may represent a local technical innovation related to amber working.',
+        exc_interpretation: 'Interpretation',
+        exc_interp_text: 'The abundance and character of burins, together with associated flake types, point to specialised amber-working activities at the site.',
+        
+        // Amber Analysis
+        exc_amber_analysis: 'Amber Analysis',
+        exc_amber_quantity: 'Quantity:',
+        exc_amber_quantity_text: '1 in situ amber find and 91 additional amber fragments recovered by wet sieving (total 92 pieces), indicating substantial amber-related activity.',
+        exc_amber_microscope: 'Microscopic observations',
+        exc_amber_obs1: 'Pos. Nr. 206: crushing/impact waves suggesting mechanical working',
+        exc_amber_obs2: 'Pos. Nr. 218: convex and concave impact waves on both sides — possible intentional striking',
+        exc_amber_obs3: 'Pos. Nr. 247: lines initially appearing engraved, later identified as natural cracks from dehydration/heat',
+        exc_amber_obs4: 'Pos. Nr. 297: thin flakes with glossy surfaces consistent with human workmanship',
+        exc_amber_obs5: 'Pos. Nr. 323: distinctive beige colour; flat surface suggests flaking from a larger piece',
+        exc_amber_conclusion: 'Although no finished objects were recovered, the combined evidence (impact-marked amber fragments, specialized burins, and spatial concentration of amber) strongly supports on-site amber processing.',
+        
+        // Environmental Context
+        exc_env_context: 'Environmental Context',
+        exc_beaver: 'Beaver disturbance',
+        exc_beaver_text: 'Features interpreted as beaver disturbance penetrate GH2–GH4 and contain large quantities of wood debris, indicating significant post-depositional mixing in parts of the site.',
+        exc_landscape: 'Landscape',
+        exc_landscape_text: 'The site sits on a paleochannel in the Elbe floodplain, with evidence for seasonal/episodic flooding during the Allerød and good organic preservation due to fluvial sedimentation.',
+        
+        // Interpretation & Research
+        exc_site_function: 'Interpretation: Site Function',
+        exc_site_function_text: 'Grabow 15 is best interpreted as a specialised, temporary occupation focused on amber processing and related tasks. The lack of structural features, dispersed find patterns, and the concentration of amber and specialized tools point to episodic, task-specific use rather than permanent settlement.',
+        exc_post_exc: 'Post-excavation Research',
+        exc_post_exc_text: 'Ongoing analyses include radiocarbon dating (six selected samples), wood species identification, micro-XRF sediment analysis, macrofossil and biomarker analyses, and full digitization of spatial data in QGIS.',
+        exc_significance: 'Significance & Research Questions',
+        exc_significance_text: 'Grabow 15 contributes to understanding Late Palaeolithic resource exploitation, technological specialization, seasonal mobility, human responses to environmental change, and potential long-distance exchange networks involving amber.',
+        
+        // Project information
+        exc_proj_info: 'Project information',
+        exc_proj_ref: 'Project reference:',
+        exc_proj_ref_text: 'NDL_JGA_2025-1',
+        exc_proj_funding: 'Funding:',
+        exc_proj_funding_text: 'Beckett-Fonden (100,000 DKK) and Queen Margrethe II's Archaeological Fund (45,000 DKK)',
+        exc_proj_storage: 'Current storage:',
+        exc_proj_storage_text: 'Moesgaard Campus, Aarhus University (until analyses complete; then return to NLD)',
+        exc_proj_report: 'Report date:',
+        exc_proj_report_text: 'June 2025',
+        exc_credits: 'Credits',
+        exc_credits_text: 'Report prepared by the Grabow 15 excavation team, Aarhus University, in collaboration with the Niedersächsisches Landesamt für Denkmalpflege. Excavation directed by Prof. Thomas Terberger, Prof. Felix Riede, and PhD student Lasse Lukas Platz Herskind.',
+        
         footer: '© 2025 Marco Birkedahl Jørgensen. All rights reserved.'
     },
     da: {
@@ -378,6 +463,91 @@ const translations = {
         exc_elevation_text: '~13,5 m over havet',
         exc_setting: 'Beliggenhed:',
         exc_setting_text: 'Bred af en palæokanal i et dynamisk fluvialt landskab',
+        
+        // Udgravningen 2025
+        exc_excavation: 'Udgravningen 2025',
+        exc_campaign: 'Kampagnedetaljer',
+        exc_duration: 'Varighed:',
+        exc_duration_text: '5. maj – 28. maj 2025',
+        exc_team: 'Team:',
+        exc_team_text: 'Ledet af professor Thomas Terberger, professor Felix Riede og ph.d.-studerende Lasse Lukas Platz Herskind, sammen med bachelorstuderende fra Aarhus Universitet',
+        exc_areas: 'Udgravningsområder:',
+        exc_areas_text: 'To hovedfelter (Område A og B, ~10 m² i alt) og fem testfelter (0,5 × 0,5 m)',
+        exc_methodology: 'Metodologi',
+        exc_method_text: 'Udgravningen fulgte enkelt-kontekst stratigrafisk nedtagning i 3–5 cm spitlag, med dokumentation ved totalstation og GNSS. Vådsoldning med UV-inspektion blev brugt til at indsamle små organiske rester (herunder rav). Alle rumlige data blev digitaliseret i QGIS til analyse.',
+        
+        // Nøglefund
+        exc_findings: 'Nøglefund — 798 artefakter',
+        exc_material: 'Materialefordeling',
+        exc_wood: 'Træ:',
+        exc_wood_text: '387 — fremragende organisk bevarelse, primært fra Område B',
+        exc_flint: 'Flint:',
+        exc_flint_text: '264 — herunder stikler og produktionsaffald',
+        exc_amber: 'Rav:',
+        exc_amber_text: '92 — indikerer ravbearbejdningsaktiviteter',
+        exc_plant: 'Planterester:',
+        exc_plant_text: '33 — Betula, Salix, Populus trækul identificeret',
+        exc_bone: 'Knogler:',
+        exc_bone_text: '12 — hovedsageligt brændte fragmenter',
+        exc_charcoal: 'Trækul:',
+        exc_charcoal_text: '10 — bevis for brug af ild',
+        exc_stratigraphy: 'Stratigrafi',
+        exc_strat_intro: 'Fire geologiske horisonter blev dokumenteret:',
+        exc_gh1: 'Matjord (plovlag, ~30 cm)',
+        exc_gh2: 'Lysegråt fluvialt silt (~7–14 cm), delvist sterilt',
+        exc_gh3: 'Allerød kulturlag med mørkegråbrunt sediment indeholdende de fleste artefakter',
+        exc_gh4: 'Lysegråt sand med orange/gule marmoringer (sterilt)',
+        exc_false_layer: 'Et tyndt "falsk Allerød-lag" (fortolket som en Yngre Dryas-oversvømmelseslinje) markerer en overgang inden for GH2.',
+        
+        // Litisk teknologi
+        exc_lithic: 'Litisk teknologi: Bevis for specialiseret redskabsproduktion',
+        exc_burins: 'Stikler',
+        exc_burins_text: 'Fem stikler blev fundet — bemærkelsesværdigt for Senpalæolitikum. Tre har dobbelte arbejdskanter, og én viser flere opskærpningsepisoder med tilhørende stiklafslag. Stikler fortolkes som graverings-redskaber og er i overensstemmelse med specialiserede arbejdsaktiviteter.',
+        exc_flakes_head: 'Specialiserede afslag',
+        exc_flakes_text: 'To afslag med ligesidede trekantede tværsnit og retusjerede spidser blev fundet; disse synes tilpasset til snæver skrabning eller gravering og kan repræsentere en lokal teknisk innovation relateret til ravbearbejdning.',
+        exc_interpretation: 'Fortolkning',
+        exc_interp_text: 'Mængden og karakteren af stikler, sammen med tilhørende afslagstyper, peger på specialiserede ravbearbejdningsaktiviteter på lokaliteten.',
+        
+        // Ravanalyse
+        exc_amber_analysis: 'Ravanalyse',
+        exc_amber_quantity: 'Mængde:',
+        exc_amber_quantity_text: '1 in situ ravfund og 91 yderligere ravfragmenter indsamlet ved vådsoldning (i alt 92 stykker), hvilket indikerer betydelig ravrelateret aktivitet.',
+        exc_amber_microscope: 'Mikroskopiske observationer',
+        exc_amber_obs1: 'Pos. Nr. 206: knus-/nedslagsbølger der antyder mekanisk bearbejdning',
+        exc_amber_obs2: 'Pos. Nr. 218: konvekse og konkave nedslagsbølger på begge sider — mulig intentionel slagning',
+        exc_amber_obs3: 'Pos. Nr. 247: linjer der oprindeligt fremtrådte graverede, senere identificeret som naturlige revner fra udtørring/varme',
+        exc_amber_obs4: 'Pos. Nr. 297: tynde afslag med blanke overflader i overensstemmelse med menneskelig fremstilling',
+        exc_amber_obs5: 'Pos. Nr. 323: karakteristisk beige farve; flad overflade antyder afspaltning fra et større stykke',
+        exc_amber_conclusion: 'Selvom ingen færdige genstande blev fundet, understøtter de samlede beviser (nedslagsmærkede ravfragmenter, specialiserede stikler og rumlig koncentration af rav) stærkt ravbearbejdning på stedet.',
+        
+        // Miljøkontekst
+        exc_env_context: 'Miljøkontekst',
+        exc_beaver: 'Bæverforstyrrelse',
+        exc_beaver_text: 'Strukturer fortolket som bæverforstyrrelse penetrerer GH2–GH4 og indeholder store mængder træaffald, hvilket indikerer betydelig postdepositionel blanding i dele af lokaliteten.',
+        exc_landscape: 'Landskab',
+        exc_landscape_text: 'Lokaliteten ligger på en palæokanal i Elbe-lavningen med bevis for sæson-/episodisk oversvømmelse under Allerød og god organisk bevarelse grundet fluvial sedimentering.',
+        
+        // Fortolkning & forskning
+        exc_site_function: 'Fortolkning: Lokalitetsfunktion',
+        exc_site_function_text: 'Grabow 15 fortolkes bedst som en specialiseret, midlertidig boplads fokuseret på ravbearbejdning og relaterede opgaver. Fraværet af strukturer, spredte fundmønstre og koncentrationen af rav og specialiserede redskaber peger på episodisk, opgavespecifik brug snarere end permanent bosættelse.',
+        exc_post_exc: 'Efterudgravningsforskning',
+        exc_post_exc_text: 'Igangværende analyser omfatter radiokulstof-datering (seks udvalgte prøver), træartsidentifikation, mikro-XRF sedimentanalyse, makrofossil- og biomarkøranalyser samt fuldstændig digitalisering af rumlige data i QGIS.',
+        exc_significance: 'Betydning og forskningsspørgsmål',
+        exc_significance_text: 'Grabow 15 bidrager til forståelsen af senpalæolitisk ressourceudnyttelse, teknologisk specialisering, sæsonmæssig mobilitet, menneskelige reaktioner på miljøændringer og potentielle langdistance-udvekslingsnetværk involverende rav.',
+        
+        // Projektinformation
+        exc_proj_info: 'Projektinformation',
+        exc_proj_ref: 'Projektreference:',
+        exc_proj_ref_text: 'NDL_JGA_2025-1',
+        exc_proj_funding: 'Finansiering:',
+        exc_proj_funding_text: 'Beckett-Fonden (100.000 DKK) og Dronning Margrethe II's Archæologiske Fond (45.000 DKK)',
+        exc_proj_storage: 'Nuværende opbevaring:',
+        exc_proj_storage_text: 'Moesgaard Campus, Aarhus Universitet (indtil analyserne er færdige; derefter retur til NLD)',
+        exc_proj_report: 'Rapportdato:',
+        exc_proj_report_text: 'Juni 2025',
+        exc_credits: 'Credits',
+        exc_credits_text: 'Rapport udarbejdet af Grabow 15 udgravningsholdet, Aarhus Universitet, i samarbejde med Niedersächsisches Landesamt für Denkmalpflege. Udgravning ledet af professor Thomas Terberger, professor Felix Riede og ph.d.-studerende Lasse Lukas Platz Herskind.',
+        
         footer: '© 2025 Marco Birkedahl Jørgensen. Alle rettigheder forbeholdes.'
     }
 };
