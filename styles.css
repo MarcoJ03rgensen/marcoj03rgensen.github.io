@@ -302,6 +302,8 @@ nav {
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
+    max-width: 100%;
+    white-space: normal;
 }
 
 /* ===================================
