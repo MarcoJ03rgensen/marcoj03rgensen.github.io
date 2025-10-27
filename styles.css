@@ -26,6 +26,8 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .container {
@@ -297,6 +299,9 @@ nav {
     color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* ===================================
