@@ -90,8 +90,9 @@ window.addEventListener('scroll', () => {
 // ===================================
 const contactForm = document.querySelector('.contact-form');
 
-contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
     const submitButton = contactForm.querySelector('.submit-button');
     const originalText = submitButton.textContent;
@@ -119,7 +120,8 @@ contactForm.addEventListener('submit', async (e) => {
         submitButton.textContent = originalText;
         submitButton.disabled = false;
     }
-});
+    });
+}
 
 // ===================================
 // Dynamic Year in Footer
