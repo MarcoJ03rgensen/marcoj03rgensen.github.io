@@ -57,10 +57,10 @@
                     <h2>LandscapeAcousticVST</h2>
                     <p class="byline" data-i18n="project_byline">By Marco Birkedahl Jørgensen</p>
                     <div class="project-status"><span data-i18n="project_status">Status:</span> <span data-i18n="project_status_wip">Work in progress</span></div>
-                    <p>A terrain-based, real-time sound propagation VST plugin designed for outdoor acoustic simulation using DEMs and ISO 9613-2 methods.</p>
+                    <p data-i18n="lavst_desc">A terrain-based, real-time sound propagation VST plugin designed for outdoor acoustic simulation using DEMs and ISO 9613-2 methods.</p>
 
                     <h3 data-i18n="project_overview">Overview</h3>
-                    <p>This project implements real-time terrain-derived convolution and scientifically-grounded propagation modeling to simulate outdoor soundscapes for research and creative use.</p>
+                    <p data-i18n="lavst_overview">This project implements real-time terrain-derived convolution and scientifically-grounded propagation modeling to simulate outdoor soundscapes for research and creative use.</p>
 
                     <h3 data-i18n="project_technical">Technical & Development</h3>
                     <p><span data-i18n="project_author">Author:</span> Marco Birkedahl Jørgensen</p>
@@ -71,61 +71,61 @@
             <section style="margin-top:2rem;">
                 <h3 data-i18n="project_description">Description</h3>
                 <div class="project-readme" style="background:#f9f9f9;padding:1rem;border-radius:6px;">
-                    <p>LandscapeAcousticVST is a real-time terrain-based sound propagation VST plugin designed to
+                    <p data-i18n="lavst_desc_full">LandscapeAcousticVST is a real-time terrain-based sound propagation VST plugin designed to
                     simulate outdoor acoustic environments using Digital Elevation Models (DEMs) and ISO 9613-2
                     acoustic propagation calculations.</p>
 
-                    <p><strong>Core Features</strong><br>
-                    The plugin offers real-time convolution for terrain-derived impulse responses and ISO 9613-2
+                    <p><strong data-i18n="lavst_core_features">Core Features</strong><br>
+                    <span data-i18n="lavst_core_text">The plugin offers real-time convolution for terrain-derived impulse responses and ISO 9613-2
                     compliance for scientifically accurate acoustic propagation modeling. It supports multiple DEM
                     formats (GeoTIFF, ESRI ASCII Grid, DTED, SRTM HGT, and ERDAS Imagine) through GDAL integration,
                     with seamless QGIS integration via PyQGIS export scripts. The plugin is available as VST3, AU, and
                     standalone applications across Windows, macOS, and Linux, and includes an interactive GUI with
-                    visual terrain mapping and point-and-click source/receiver selection.</p>
+                    visual terrain mapping and point-and-click source/receiver selection.</span></p>
 
-                    <p><strong>Technical Requirements</strong><br>
-                    To build the plugin, you need the JUCE Framework (7.0+), GDAL Library (3.0+), CMake (3.15+), and a
+                    <p><strong data-i18n="lavst_tech_req">Technical Requirements</strong><br>
+                    <span data-i18n="lavst_tech_text">To build the plugin, you need the JUCE Framework (7.0+), GDAL Library (3.0+), CMake (3.15+), and a
                     C++17-compatible compiler. The documentation provides platform-specific installation instructions
-                    for Windows (vcpkg), macOS (Homebrew), and Linux (Ubuntu/Debian).</p>
+                    for Windows (vcpkg), macOS (Homebrew), and Linux (Ubuntu/Debian).</span></p>
 
-                    <p><strong>How to Use</strong><br>
-                    Users can load DEM data by dragging and dropping GeoTIFF files or using the "Load DEM File" button.
+                    <p><strong data-i18n="lavst_how_to">How to Use</strong><br>
+                    <span data-i18n="lavst_how_text">Users can load DEM data by dragging and dropping GeoTIFF files or using the "Load DEM File" button.
                     Analysis points are set by left-clicking to place a sound source and right-clicking to set the listener
                     position, with the plugin automatically generating the impulse response. Adjustable parameters
                     include temperature, humidity, ground type (Hard/Porous/Mixed), source and receiver heights, and
                     dry/wet mix. The plugin processes audio in real-time through terrain-based convolution and allows
-                    export of impulse responses as WAV files.</p>
+                    export of impulse responses as WAV files.</span></p>
 
-                    <p><strong>Scientific Approach</strong><br>
-                    The plugin implements the ISO 9613-2 international standard for outdoor sound attenuation,
+                    <p><strong data-i18n="lavst_scientific">Scientific Approach</strong><br>
+                    <span data-i18n="lavst_sci_text">The plugin implements the ISO 9613-2 international standard for outdoor sound attenuation,
                     including geometric spreading loss (divergence), temperature and humidity-dependent
                     atmospheric absorption, ground effect modeling, and Fresnel knife-edge diffraction theory for
-                    terrain obstructions.</p>
+                    terrain obstructions.</span></p>
 
-                    <p><strong>QGIS Integration Workflow</strong><br>
-                    The plugin can be installed as a QGIS plugin or used with manual export scripts. Users open a DEM as
+                    <p><strong data-i18n="lavst_qgis">QGIS Integration Workflow</strong><br>
+                    <span data-i18n="lavst_qgis_text">The plugin can be installed as a QGIS plugin or used with manual export scripts. Users open a DEM as
                     a raster layer, create a point layer with source/receiver points, add a 'type' attribute to distinguish
                     sources from receivers, and run the qgis_export.py script in QGIS's Python Console. The generated
                     configuration can then be imported into the plugin using the "Import QGIS Config" button, which
-                    automatically loads the DEM and sets analysis points.</p>
+                    automatically loads the DEM and sets analysis points.</span></p>
 
-                    <p><strong>Archaeoacoustic Applications</strong><br>
-                    The documentation highlights three key applications for archaeology: soundscape reconstruction for
+                    <p><strong data-i18n="lavst_archaeo">Archaeoacoustic Applications</strong><br>
+                    <span data-i18n="lavst_archaeo_text">The documentation highlights three key applications for archaeology: soundscape reconstruction for
                     modeling historical acoustic environments, site analysis for understanding acoustic properties of
                     archaeological locations, and cultural interpretation to explore sound-landscape relationships in
-                    past societies.</p>
+                    past societies.</span></p>
 
-                    <p><strong>Performance Specifications</strong><br>
-                    The plugin achieves less than 5% CPU usage for typical scenarios, supports impulse response
+                    <p><strong data-i18n="lavst_performance">Performance Specifications</strong><br>
+                    <span data-i18n="lavst_perf_text">The plugin achieves less than 5% CPU usage for typical scenarios, supports impulse response
                     lengths up to 16,384 samples (370ms at 44.1kHz), has been tested with elevation grids up to 10k×10k,
-                    and maintains plugin latency plus convolution delay of typically less than 10ms.</p>
+                    and maintains plugin latency plus convolution delay of typically less than 10ms.</span></p>
 
-                    <p><strong>Development and Support</strong><br>
-                    The project is structured with C++ source code in the Source/ directory, UI assets and sample data
+                    <p><strong data-i18n="lavst_dev">Development and Support</strong><br>
+                    <span data-i18n="lavst_dev_text">The project is structured with C++ source code in the Source/ directory, UI assets and sample data
                     in Resources/, QGIS integration scripts in scripts/, unit and integration tests in tests/, and
                     documentation in docs/. The plugin is licensed under the MIT License and includes guidelines for
                     contributing that emphasize C++17 standards, unit tests, Doxygen documentation, and validation
-                    against ISO 9613-2 reference calculations.</p>
+                    against ISO 9613-2 reference calculations.</span></p>
                 </div>
             </section>
             
