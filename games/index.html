@@ -20,18 +20,22 @@
         </div>
       </a>
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/#projects">Projects</a></li>
-        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/" data-i18n="nav_home">Home</a></li>
+        <li><a href="/#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="/#contact" data-i18n="nav_contact">Contact</a></li>
       </ul>
+      <div class="lang-switch" aria-hidden="false">
+        <button class="lang-toggle" data-lang="en" aria-label="English">🇺🇸</button>
+        <button class="lang-toggle" data-lang="da" aria-label="Dansk">🇩🇰</button>
+      </div>
       <div class="hamburger"><span></span><span></span><span></span></div>
     </nav>
   </header>
 
   <main style="padding-top:80px;">
     <section class="container games-list">
-      <h2>Games</h2>
-      <p style="text-align:center; max-width:800px; margin:0.5rem auto 1.5rem;">Select a game to play. Currently available:</p>
+      <h2 data-i18n="games_h2">Games</h2>
+      <p style="text-align:center; max-width:800px; margin:0.5rem auto 1.5rem;" data-i18n="games_intro">Select a game to play. Currently available:</p>
 
       <div class="project-gallery">
         <div class="project-item">
@@ -59,7 +63,7 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Marco Birkedahl Jørgensen. All rights reserved.</p>
+      <p data-i18n="footer">&copy; 2025 Marco Birkedahl Jørgensen. All rights reserved.</p>
     </div>
   </footer>
 

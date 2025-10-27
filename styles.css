@@ -152,14 +152,21 @@ nav {
     background: transparent;
     color: var(--white);
     border: 1px solid rgba(255,255,255,0.12);
-    padding: 0.25rem 0.5rem;
+    padding: 0.35rem 0.5rem;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1;
+    transition: all 0.2s ease;
+}
+.lang-switch .lang-toggle:hover {
+    border-color: var(--secondary-color);
+    transform: scale(1.1);
 }
 .lang-switch .lang-toggle[aria-pressed="true"] {
-    background: var(--secondary-color);
+    background: rgba(210, 105, 30, 0.2);
     border-color: var(--secondary-color);
+    box-shadow: 0 0 8px rgba(210, 105, 30, 0.3);
 }
 
 .hamburger span {
