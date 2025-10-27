@@ -54,18 +54,18 @@
                 </div>
                 <div>
                     <h2>CircuitscapeQGIS</h2>
-                    <p class="byline">By Marco Birkedahl Jørgensen</p>
-                    <div class="project-status">Status: Work in progress</div>
+                    <p class="byline" data-i18n="project_byline">By Marco Birkedahl Jørgensen</p>
+                    <div class="project-status"><span data-i18n="project_status">Status:</span> <span data-i18n="project_status_wip">Work in progress</span></div>
                     <p>CircuitscapeQGIS is a QGIS plugin that integrates Circuitscape functionality for landscape connectivity analysis directly into QGIS. It supports resistance rasters, focal points, background task processing and multiple solver options.</p>
 
-                    <h3>Goals</h3>
+                    <h3 data-i18n="project_goals">Goals</h3>
                     <ul>
                         <li>Provide a simple, reproducible interface to run Circuitscape from within QGIS.</li>
                         <li>Support common workflows: resistance rasters, focal points, and export of current maps.</li>
                         <li>Offer robust background processing and automatic CRS handling for focal layers.</li>
                     </ul>
 
-                    <h3>Key Features</h3>
+                    <h3 data-i18n="project_features">Key Features</h3>
                     <ul>
                         <li>Run Circuitscape in resistance or conductance mode.</li>
                         <li>Background processing with the QGIS Task Manager.</li>
@@ -74,14 +74,14 @@
                         <li>Convenient export options (ASCII raster for downstream tools).</li>
                     </ul>
 
-                    <h3>Usage Notes</h3>
+                    <h3 data-i18n="project_usage">Usage Notes</h3>
                     <p>Load a resistance raster and (optionally) focal points in QGIS, open the CircuitscapeQGIS plugin, configure inputs and solver, and run. Monitor progress in the QGIS Task Manager — outputs will be added to the map when complete.</p>
 
-                    <h3>Technical & Development</h3>
-                    <p>Author: Marco Birkedahl Jørgensen</p>
-                    <p>Repository & issues: <a href="https://github.com/yourusername/circuitscape-qgis" target="_blank" rel="noopener">https://github.com/yourusername/circuitscape-qgis</a></p>
+                    <h3 data-i18n="project_technical">Technical & Development</h3>
+                    <p><span data-i18n="project_author">Author:</span> Marco Birkedahl Jørgensen</p>
+                    <p><span data-i18n="project_repo">Repository & issues:</span> <a href="https://github.com/yourusername/circuitscape-qgis" target="_blank" rel="noopener">https://github.com/yourusername/circuitscape-qgis</a></p>
 
-                    <h3>Install</h3>
+                    <h3 data-i18n="project_install">Install</h3>
                     <p>Requirements: QGIS 3.16+ and Circuitscape (Julia or Python implementation).</p>
                     <p><strong>Julia (recommended)</strong></p>
                     <pre><code>julia -e 'using Pkg; Pkg.add("Circuitscape")'</code></pre>
@@ -92,7 +92,7 @@
             </div>
 
             <section style="margin-top:2rem;">
-                <h3>Changelog (summary)</h3>
+                <h3 data-i18n="project_changelog">Changelog (summary)</h3>
                 <p>Version 1.0.0 — Initial WIP release with UI, task manager integration, and basic solver options.</p>
             </section>
         </div>
