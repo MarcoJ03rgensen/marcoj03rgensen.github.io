@@ -363,7 +363,7 @@ const translations = {
         nav_research: 'Forskning',
         nav_projects: 'Projekter',
         nav_excavations: 'Udgravninger',
-        nav_games: 'Arkæologiske Spil',
+        nav_games: 'Arkæologiske spil',
         nav_contact: 'Kontakt',
         hero_h2: 'Udforsker fortiden, forstår nutiden',
         hero_p: 'Arkæologisk forskning med fokus på landskabsfænomenologi, GIS-analyse og rumlig arkæologi',
